@@ -86,7 +86,7 @@ const HeroSection = () => {
             {[...suits, ...suits].map((suit, idx) => (
               <div
                 key={idx}
-                className="hero-card relative w-[200px] md:w-[260px] aspect-[4/5] rounded-[32px] overflow-hidden group border border-gold/10 shadow-2xl"
+                className="hero-card relative w-[200px] md:w-[260px] aspect-[4/5] rounded-[20px] overflow-hidden group border border-gold/25 shadow-2xl"
               >
                 <img
                   src={suit.img}
