@@ -26,8 +26,8 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="#" className="font-display text-gold text-3xl md:text-4xl flex items-center gap-2">
-          <i className="fa-solid fa-bag-shopping text-xl" />
+        <a href="#" className="font-display text-gold text-2xl md:text-4xl flex items-center gap-2">
+          <i className="fa-solid fa-bag-shopping text-lg md:text-xl" />
           El_Elias Fashion
         </a>
 
