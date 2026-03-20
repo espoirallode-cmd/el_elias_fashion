@@ -24,16 +24,15 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-[90vh] flex flex-col items-center justify-start overflow-hidden pt-48 pb-20 bg-background"
+      className="relative min-h-[90vh] flex flex-col items-center justify-start overflow-hidden pt-32 md:pt-48 pb-20 bg-background"
     >
       {/* Background radial gradient to mimic the premium feel */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,223,100,0.1),transparent_50%)]" />
 
       {/* Main Content */}
-      {/* Main Content */}
       <div className="relative z-10 text-center w-full mb-16">
         <div 
-          className={`inline-block border border-gold/40 rounded-full px-4 py-1.5 mb-8 bg-gold/5 transition-all duration-1000 ${
+          className={`inline-block border border-gold/40 rounded-full px-4 py-1.5 mb-5 md:mb-8 bg-gold/5 transition-all duration-1000 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
