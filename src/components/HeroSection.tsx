@@ -30,7 +30,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,223,100,0.1),transparent_50%)]" />
 
       {/* Main Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mb-16">
+      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto mb-16">
         <div 
           className={`inline-block border border-gold/40 rounded-full px-4 py-1.5 mb-8 bg-gold/5 transition-all duration-1000 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
@@ -40,7 +40,7 @@ const HeroSection = () => {
         </div>
         
         <h1 
-          className={`font-hero text-gold text-4xl sm:text-6xl md:text-8xl lg:text-9xl mb-4 whitespace-nowrap transition-all duration-1000 delay-100 ${
+          className={`font-hero text-gold text-4xl sm:text-6xl md:text-8xl lg:text-9xl mb-4 w-full transition-all duration-1000 delay-100 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
