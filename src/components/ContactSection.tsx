@@ -38,7 +38,7 @@ const ContactSection = () => {
               href="https://wa.me/22900000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-gold/5 backdrop-blur-md border border-gold/30 text-gold font-body font-semibold px-6 py-3 rounded-xl text-sm hover:bg-gold/20 hover:border-gold/50 transition-all duration-300 shadow-lg shadow-gold/5 group"
+              className="flex w-fit mx-auto lg:mx-0 items-center gap-2 bg-gold/5 backdrop-blur-md border border-gold/30 text-gold font-body font-semibold px-6 py-3 rounded-xl text-sm hover:bg-gold/20 hover:border-gold/50 transition-all duration-300 shadow-lg shadow-gold/5 group"
             >
               <i className="fa-brands fa-whatsapp text-xl group-hover:scale-110 transition-transform" />
               Contactez-nous sur WhatsApp
