@@ -4,7 +4,7 @@ const VideoSection = () => {
   return (
     <section id="video" className="relative pt-10 pb-24 bg-background overflow-hidden">
       <div className="container mx-auto px-6">
-        <div className="relative group cursor-pointer max-w-3xl mx-auto rounded-[32px] overflow-hidden aspect-video shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-gold/10">
+        <div className="relative group cursor-pointer max-w-3xl mx-auto rounded-[20px] overflow-hidden aspect-video shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-gold/10">
           {/* Backdrop Image */}
           <img 
             src="https://images.unsplash.com/photo-1593032465175-481ac7f401a0?q=80&w=1400&auto=format&fit=crop" 
