@@ -59,7 +59,7 @@ const AboutSection = () => {
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
           >
-            <h2 className="font-display text-gold text-5xl md:text-6xl mb-6">Notre Histoire</h2>
+            <h2 className="font-display text-gold text-5xl md:text-6xl mb-6 text-center lg:text-left">Notre Histoire</h2>
             <p className="font-body text-foreground/80 leading-relaxed mb-4">
               Depuis plus de 10 ans, <strong className="text-gold">Boutique la Qualité — El_Elias Fashion</strong> habille
               les hommes et femmes de Cotonou avec élégance et raffinement. Notre passion pour la mode haut de gamme nous
@@ -70,7 +70,7 @@ const AboutSection = () => {
               croyons que l'élégance est un art de vivre, et nous sommes là pour vous accompagner dans cette démarche.
             </p>
 
-            <div className="flex gap-8">
+            <div className="flex justify-center lg:justify-start gap-8">
               {values.map((v) => (
                 <div key={v.title} className="text-center">
                   <div className="w-14 h-14 rounded-full border border-gold/40 flex items-center justify-center mb-2 mx-auto">
