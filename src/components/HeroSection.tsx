@@ -31,7 +31,7 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,223,100,0.1),transparent_50%)]" />
       
       {/* Watermark Background */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
+      <div className="absolute inset-0 opacity-10 pointer-events-none overflow-hidden">
         <img 
           src={heroWatermark} 
           alt="Watermark" 
