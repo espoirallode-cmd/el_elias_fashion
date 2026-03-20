@@ -30,7 +30,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,223,100,0.1),transparent_50%)]" />
 
       {/* Main Content */}
-      <div className="relative z-10 text-center px-6 max-w-5xl mx-auto mb-16">
+      {/* Main Content */}
+      <div className="relative z-10 text-center w-full mb-16">
         <div 
           className={`inline-block border border-gold/40 rounded-full px-4 py-1.5 mb-8 bg-gold/5 transition-all duration-1000 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
@@ -40,20 +41,22 @@ const HeroSection = () => {
         </div>
         
         <h1 
-          className={`font-hero text-gold text-4xl sm:text-6xl md:text-8xl lg:text-9xl mb-4 w-full whitespace-nowrap transition-all duration-1000 delay-100 ${
+          className={`font-hero text-gold text-4xl sm:text-6xl md:text-8xl lg:text-9xl mb-4 w-full block text-center whitespace-nowrap transition-all duration-1000 delay-100 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
           L'Élégance Redéfinie
         </h1>
 
-        <p 
-          className={`font-body text-foreground/80 text-lg md:text-2xl max-w-2xl mx-auto mb-10 leading-relaxed transition-all duration-1000 delay-200 ${
-            visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-          }`}
-        >
-          Avec El_Elias votre élégance est inévitable!
-        </p>
+        <div className="max-w-2xl mx-auto px-6">
+          <p 
+            className={`font-body text-foreground/80 text-lg md:text-2xl mb-10 leading-relaxed transition-all duration-1000 delay-200 ${
+              visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+            }`}
+          >
+            Avec El_Elias votre élégance est inévitable!
+          </p>
+        </div>
 
         <div 
           className={`transition-all duration-1000 delay-300 ${
