@@ -4,6 +4,7 @@ import suitNavy from "@/assets/suit-navy.png";
 import suitBurgundy from "@/assets/suit-burgundy.png";
 import suitGreen from "@/assets/suit-green.png";
 import suitGrey from "@/assets/suit-grey.png";
+import heroWatermark from "@/assets/hero-watermark.jpg";
 
 const suits = [
   { img: suitTan, label: "Beige Royal" },
@@ -28,6 +29,15 @@ const HeroSection = () => {
     >
       {/* Background radial gradient to mimic the premium feel */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,223,100,0.1),transparent_50%)]" />
+      
+      {/* Watermark Background */}
+      <div className="absolute inset-0 opacity-5 pointer-events-none overflow-hidden">
+        <img 
+          src={heroWatermark} 
+          alt="Watermark" 
+          className="w-full h-full object-cover" 
+        />
+      </div>
 
       {/* Main Content */}
       <div className="relative z-10 text-center w-full mb-16">
