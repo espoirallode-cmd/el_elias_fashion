@@ -40,7 +40,7 @@ const HeroSection = () => {
         </div>
         
         <h1 
-          className={`font-hero text-gold text-4xl sm:text-6xl md:text-8xl lg:text-9xl mb-4 w-full transition-all duration-1000 delay-100 ${
+          className={`font-hero text-gold text-4xl sm:text-6xl md:text-8xl lg:text-9xl mb-4 w-full whitespace-nowrap transition-all duration-1000 delay-100 ${
             visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
           }`}
         >
