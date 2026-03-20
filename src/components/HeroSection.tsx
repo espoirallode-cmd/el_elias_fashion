@@ -37,6 +37,8 @@ const HeroSection = () => {
           alt="Watermark" 
           className="w-full h-full object-cover" 
         />
+        {/* Bottom shadow/fade for the watermark image */}
+        <div className="absolute inset-0 bg-gradient-to-t from-background via-background/40 to-transparent" />
       </div>
 
       {/* Main Content */}
