@@ -71,7 +71,7 @@ const CatalogSection = () => {
             <button
               key={c}
               onClick={() => setActive(c)}
-              className={`font-body text-xs uppercase tracking-widest px-5 py-2 rounded-sm border transition-all duration-300 ${
+              className={`font-body text-[9px] md:text-xs uppercase tracking-widest px-2.5 py-1 md:px-5 md:py-2 rounded-sm border transition-all duration-300 ${
                 active === c
                   ? "bg-gold text-background border-gold"
                   : "border-gold/30 text-foreground/70 hover:border-gold hover:text-gold"
@@ -86,7 +86,7 @@ const CatalogSection = () => {
           {filtered.map((p, i) => (
             <div
               key={p.name}
-              className="bg-dark-card rounded-lg overflow-hidden border border-transparent hover:border-gold/50 hover:shadow-gold hover:-translate-y-1 transition-all duration-300 group w-full sm:w-[240px] md:w-[200px] lg:w-[190px] xl:w-[180px]"
+              className="bg-dark-card rounded-lg overflow-hidden border border-transparent hover:border-gold/50 hover:shadow-gold hover:-translate-y-1 transition-all duration-300 group w-[145px] sm:w-[240px] md:w-[200px] lg:w-[190px] xl:w-[180px]"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               <div className="relative overflow-hidden aspect-square">
@@ -101,15 +101,15 @@ const CatalogSection = () => {
                 </div>
               </div>
               {active === "Tous" && (
-                <div className="p-4">
-                  <h3 className="font-body font-semibold text-foreground text-sm mb-1 truncate">{p.name}</h3>
-                  <p className="text-gold font-body font-bold text-xs mb-3">{p.price}</p>
+                <div className="p-3 md:p-4">
+                  <h3 className="font-body font-semibold text-foreground text-xs md:text-sm mb-1 truncate">{p.name}</h3>
+                  <p className="text-gold font-body font-bold text-[10px] md:text-xs mb-3">{p.price}</p>
                   <button 
                     onClick={() => {
                       setActive(p.cat);
                       window.scrollTo({ top: ref.current?.offsetTop ? ref.current.offsetTop - 100 : 0, behavior: 'smooth' });
                     }}
-                    className="w-full font-body text-[10px] uppercase tracking-widest py-1.5 border border-gold/40 text-foreground rounded-sm hover:bg-gold hover:text-background transition-all duration-300"
+                    className="w-full font-body text-[9px] md:text-[10px] uppercase tracking-widest py-0.5 md:py-1.5 border border-gold/40 text-foreground rounded-sm hover:bg-gold hover:text-background transition-all duration-300"
                   >
                     Voir plus
                   </button>
