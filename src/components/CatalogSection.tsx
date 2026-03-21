@@ -104,10 +104,10 @@ const CatalogSection = () => {
           {filtered.map((p, i) => (
             <div
               key={p.name}
-              className={`rounded-lg overflow-hidden transition-all duration-300 group w-full max-w-sm ${
+              className={`rounded-lg overflow-hidden border border-gold/20 transition-all duration-300 group w-full max-w-sm ${
                 active === "Tous" 
-                  ? "bg-dark-card border border-transparent hover:border-gold/50 hover:shadow-gold hover:-translate-y-1" 
-                  : "bg-transparent"
+                  ? "bg-dark-card hover:border-gold/50 hover:shadow-gold hover:-translate-y-1" 
+                  : "bg-transparent hover:border-gold/40"
               }`}
               style={{ animationDelay: `${i * 0.1}s` }}
             >
