@@ -82,11 +82,11 @@ const CatalogSection = () => {
           ))}
         </div>
 
-        <div className="flex flex-wrap justify-center gap-4">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 max-w-7xl mx-auto px-4">
           {filtered.map((p, i) => (
             <div
               key={p.name}
-              className="bg-dark-card rounded-lg overflow-hidden border border-transparent hover:border-gold/50 hover:shadow-gold hover:-translate-y-1 transition-all duration-300 group w-[145px] sm:w-[240px] md:w-[200px] lg:w-[190px] xl:w-[180px]"
+              className="bg-dark-card rounded-lg overflow-hidden border border-transparent hover:border-gold/50 hover:shadow-gold hover:-translate-y-1 transition-all duration-300 group w-full max-w-sm"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               <div className="relative overflow-hidden aspect-square">
@@ -109,7 +109,7 @@ const CatalogSection = () => {
                       setActive(p.cat);
                       window.scrollTo({ top: ref.current?.offsetTop ? ref.current.offsetTop - 100 : 0, behavior: 'smooth' });
                     }}
-                    className="w-full font-body text-[9px] md:text-[10px] uppercase tracking-widest py-0.5 md:py-1.5 border border-gold/40 text-foreground rounded-sm hover:bg-gold hover:text-background transition-all duration-300"
+                    className="w-full font-body text-[9px] md:text-xs uppercase tracking-widest py-0.5 md:py-3 border border-gold/40 text-foreground rounded-sm hover:bg-gold hover:text-background transition-all duration-300"
                   >
                     Voir plus
                   </button>
