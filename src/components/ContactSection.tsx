@@ -2,7 +2,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="pt-10 pb-24 bg-background">
       <div className="container mx-auto px-6 max-w-5xl">
-        <h2 className="font-display text-gold text-5xl md:text-6xl text-center mb-16">Contact</h2>
+        <h2 className="font-display text-gold text-5xl md:text-6xl text-left mb-16">Contact</h2>
         <div className="flex flex-col lg:flex-row lg:items-start justify-center gap-8">
           {/* Info */}
           <div className="space-y-6 flex-shrink-0">
@@ -38,7 +38,7 @@ const ContactSection = () => {
               href="https://wa.me/22900000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex w-fit mx-auto lg:mx-0 items-center gap-2 bg-gold/5 backdrop-blur-md border border-gold/30 text-gold font-body font-semibold px-6 py-3 rounded-xl text-sm hover:bg-gold/20 hover:border-gold/50 transition-all duration-300 shadow-lg shadow-gold/5 group"
+              className="flex w-fit mx-0 lg:mx-0 items-center gap-2 bg-gold/5 backdrop-blur-md border border-gold/30 text-gold font-body font-semibold px-6 py-3 rounded-xl text-sm hover:bg-gold/20 hover:border-gold/50 transition-all duration-300 shadow-lg shadow-gold/5 group"
             >
               <i className="fa-brands fa-whatsapp text-xl group-hover:scale-110 transition-transform" />
               Contactez-nous sur WhatsApp
