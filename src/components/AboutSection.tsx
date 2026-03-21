@@ -35,9 +35,9 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section id="about" ref={ref} className="pt-0 pb-0 bg-background">
+    <section id="about" ref={ref} className="pt-10 pb-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-10 lg:gap-20 max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row lg:items-start justify-center gap-6 lg:gap-12 max-w-5xl mx-auto">
           {/* Image */}
           <div
             className={`w-full lg:w-auto flex transition-all duration-1000 ${
