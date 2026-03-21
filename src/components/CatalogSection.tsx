@@ -82,7 +82,7 @@ const CatalogSection = () => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 max-w-7xl mx-auto px-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto px-6">
           {filtered.map((p, i) => (
             <div
               key={p.name}
@@ -101,15 +101,15 @@ const CatalogSection = () => {
                 </div>
               </div>
               {active === "Tous" && (
-                <div className="p-3 md:p-4">
-                  <h3 className="font-body font-semibold text-foreground text-xs md:text-sm mb-1 truncate">{p.name}</h3>
-                  <p className="text-gold font-body font-bold text-[10px] md:text-xs mb-3">{p.price}</p>
+                <div className="p-5 md:p-6">
+                  <h3 className="font-body font-semibold text-foreground text-sm md:text-base mb-1 truncate">{p.name}</h3>
+                  <p className="text-gold font-body font-bold text-xs md:text-sm mb-4">{p.price}</p>
                   <button 
                     onClick={() => {
                       setActive(p.cat);
                       window.scrollTo({ top: ref.current?.offsetTop ? ref.current.offsetTop - 100 : 0, behavior: 'smooth' });
                     }}
-                    className="w-full font-body text-[9px] md:text-xs uppercase tracking-widest py-0.5 md:py-3 border border-gold/40 text-foreground rounded-sm hover:bg-gold hover:text-background transition-all duration-300"
+                    className="w-full font-body text-xs md:text-xs uppercase tracking-widest py-3 md:py-3 border border-gold/40 text-foreground rounded-sm hover:bg-gold hover:text-background transition-all duration-300"
                   >
                     Voir plus
                   </button>
