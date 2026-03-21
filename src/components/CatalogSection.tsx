@@ -13,26 +13,43 @@ const products = [
   { name: "Costume de soirée", price: "Sur demande", cat: "Costumes", img: productCostume, icon: "fa-solid fa-vest" },
   { name: "Costume Slim Fit", price: "Sur demande", cat: "Costumes", img: productCostume, icon: "fa-solid fa-vest" },
   { name: "Costume Premium", price: "Sur demande", cat: "Costumes", img: productCostume, icon: "fa-solid fa-vest" },
+  { name: "Costume Croisé", price: "Sur demande", cat: "Costumes", img: productCostume, icon: "fa-solid fa-vest" },
+  { name: "Costume de Mariage", price: "Sur demande", cat: "Costumes", img: productCostume, icon: "fa-solid fa-vest" },
+  
   { name: "Chemises élégantes", price: "Sur demande", cat: "Chemises", img: productChemise, icon: "fa-solid fa-shirt", isPrimary: true },
   { name: "Chemise Blanche", price: "Sur demande", cat: "Chemises", img: productChemise, icon: "fa-solid fa-shirt" },
   { name: "Chemise Slim", price: "Sur demande", cat: "Chemises", img: productChemise, icon: "fa-solid fa-shirt" },
   { name: "Chemise Premium", price: "Sur demande", cat: "Chemises", img: productChemise, icon: "fa-solid fa-shirt" },
+  { name: "Chemise Oxford", price: "Sur demande", cat: "Chemises", img: productChemise, icon: "fa-solid fa-shirt" },
+  { name: "Chemise de Soie", price: "Sur demande", cat: "Chemises", img: productChemise, icon: "fa-solid fa-shirt" },
+  
   { name: "Lacoste", price: "Sur demande", cat: "Lacostes", img: productLacoste, icon: "fa-solid fa-shirt", isPrimary: true },
   { name: "Lacoste Sport", price: "Sur demande", cat: "Lacostes", img: productLacoste, icon: "fa-solid fa-shirt" },
   { name: "Lacoste Classic", price: "Sur demande", cat: "Lacostes", img: productLacoste, icon: "fa-solid fa-shirt" },
   { name: "Lacoste Premium", price: "Sur demande", cat: "Lacostes", img: productLacoste, icon: "fa-solid fa-shirt" },
+  { name: "Lacoste Edition", price: "Sur demande", cat: "Lacostes", img: productLacoste, icon: "fa-solid fa-shirt" },
+  { name: "Lacoste Gold", price: "Sur demande", cat: "Lacostes", img: productLacoste, icon: "fa-solid fa-shirt" },
+  
   { name: "Pantalons", price: "Sur demande", cat: "Pantalons", img: productPantalon, icon: "fa-solid fa-vest", isPrimary: true },
   { name: "Pantalon Slim", price: "Sur demande", cat: "Pantalons", img: productPantalon, icon: "fa-solid fa-vest" },
   { name: "Pantalon Toile", price: "Sur demande", cat: "Pantalons", img: productPantalon, icon: "fa-solid fa-vest" },
   { name: "Pantalon Premium", price: "Sur demande", cat: "Pantalons", img: productPantalon, icon: "fa-solid fa-vest" },
+  { name: "Pantalon Chino", price: "Sur demande", cat: "Pantalons", img: productPantalon, icon: "fa-solid fa-vest" },
+  { name: "Pantalon Cargo", price: "Sur demande", cat: "Pantalons", img: productPantalon, icon: "fa-solid fa-vest" },
+  
   { name: "Chaussures", price: "Sur demande", cat: "Chaussures", img: productChaussures, icon: "fa-solid fa-shoe-prints", isPrimary: true },
   { name: "Chaussures crêpes", price: "Sur demande", cat: "Chaussures", img: productCrepes, icon: "fa-solid fa-shoe-prints" },
   { name: "Chaussures Derby", price: "Sur demande", cat: "Chaussures", img: productChaussures, icon: "fa-solid fa-shoe-prints" },
   { name: "Mocassins Luxe", price: "Sur demande", cat: "Chaussures", img: productCrepes, icon: "fa-solid fa-shoe-prints" },
+  { name: "Richelieu", price: "Sur demande", cat: "Chaussures", img: productChaussures, icon: "fa-solid fa-shoe-prints" },
+  { name: "Bottes Oxford", price: "Sur demande", cat: "Chaussures", img: productCrepes, icon: "fa-solid fa-shoe-prints" },
+  
   { name: "Accessoires", price: "Sur demande", cat: "Accessoires", img: productCravate, icon: "fa-regular fa-gem", isPrimary: true },
   { name: "Ceintures", price: "Sur demande", cat: "Accessoires", img: productCeinture, icon: "fa-regular fa-gem" },
   { name: "Boutons de manchette", price: "Sur demande", cat: "Accessoires", img: productCravate, icon: "fa-regular fa-gem" },
   { name: "Pochette Soie", price: "Sur demande", cat: "Accessoires", img: productCeinture, icon: "fa-regular fa-gem" },
+  { name: "Cravate Luxe", price: "Sur demande", cat: "Accessoires", img: productCravate, icon: "fa-regular fa-gem" },
+  { name: "Montre Classique", price: "Sur demande", cat: "Accessoires", img: productCeinture, icon: "fa-regular fa-gem" },
 ];
 
 const categories = ["Tous", "Costumes", "Chemises", "Lacostes", "Pantalons", "Chaussures", "Accessoires"];
