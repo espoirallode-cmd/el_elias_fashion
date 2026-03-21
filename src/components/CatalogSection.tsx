@@ -104,7 +104,11 @@ const CatalogSection = () => {
           {filtered.map((p, i) => (
             <div
               key={p.name}
-              className="bg-dark-card rounded-lg overflow-hidden border border-transparent hover:border-gold/50 hover:shadow-gold hover:-translate-y-1 transition-all duration-300 group w-full max-w-sm"
+              className={`rounded-lg overflow-hidden transition-all duration-300 group w-full max-w-sm ${
+                active === "Tous" 
+                  ? "bg-dark-card border border-transparent hover:border-gold/50 hover:shadow-gold hover:-translate-y-1" 
+                  : "bg-transparent"
+              }`}
               style={{ animationDelay: `${i * 0.1}s` }}
             >
               <div 
@@ -124,10 +128,10 @@ const CatalogSection = () => {
                   <i className="fa-solid fa-expand text-white text-2xl" />
                 </div>
               </div>
-              <div className="p-5 md:p-6">
-                <h3 className="font-body font-semibold text-foreground text-sm md:text-base mb-1 truncate">{p.name}</h3>
-                <p className="text-gold font-body font-bold text-xs md:text-sm mb-4">{p.price}</p>
-                {active === "Tous" && (
+              {active === "Tous" && (
+                <div className="p-5 md:p-6">
+                  <h3 className="font-body font-semibold text-foreground text-sm md:text-base mb-1 truncate">{p.name}</h3>
+                  <p className="text-gold font-body font-bold text-xs md:text-sm mb-4">{p.price}</p>
                   <button 
                     onClick={() => {
                       setActive(p.cat);
@@ -137,8 +141,8 @@ const CatalogSection = () => {
                   >
                     Voir plus
                   </button>
-                )}
-              </div>
+                </div>
+              )}
             </div>
           ))}
         </div>
