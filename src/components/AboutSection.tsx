@@ -37,7 +37,7 @@ const AboutSection = () => {
   return (
     <section id="about" ref={ref} className="pt-10 pb-24 bg-background">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-10 lg:gap-20 max-w-7xl mx-auto">
+        <div className="flex flex-col lg:flex-row lg:items-start justify-center gap-6 lg:gap-12 max-w-5xl mx-auto">
           {/* Image */}
           <div
             className={`w-full lg:w-auto flex transition-all duration-1000 ${
@@ -45,7 +45,7 @@ const AboutSection = () => {
             }`}
           >
             <div 
-              className="border-2 border-gold/40 rounded-lg overflow-hidden shadow-gold w-full lg:w-[500px] xl:w-[550px]"
+              className="border-2 border-gold/40 rounded-lg overflow-hidden shadow-gold w-full max-w-[400px]"
               style={{ height: textHeight && window.innerWidth >= 1024 ? `${textHeight}px` : "auto" }}
             >
               <img src={aboutImage} alt="El_Elias Fashion" className="w-full h-full object-cover object-top" />
@@ -55,7 +55,7 @@ const AboutSection = () => {
           {/* Text */}
           <div
             ref={textRef}
-            className={`w-full lg:max-w-2xl transition-all duration-1000 delay-300 ${
+            className={`w-full lg:max-w-xl transition-all duration-1000 delay-300 ${
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
           >
