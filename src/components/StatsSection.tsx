@@ -35,7 +35,7 @@ const Counter = ({ target, suffix }: { target: number; suffix: string }) => {
   }, [target]);
 
   return (
-    <div ref={ref} className="text-gold font-body text-4xl md:text-5xl font-bold">
+    <div ref={ref} className="text-gold font-body text-5xl md:text-6xl font-bold">
       {count}{suffix}
     </div>
   );
@@ -53,11 +53,11 @@ const StatsSection = () => (
             {/* Subtle light reflection for glacial effect */}
             <div className="absolute -top-24 -left-24 w-48 h-48 bg-gold/10 rounded-full blur-3xl group-hover:bg-gold/20 transition-all" />
             
-            <i className={`${s.icon} text-gold text-2xl mb-3 relative z-10`} />
-            <div className="relative z-10">
+            <div className="flex items-center justify-center gap-4 relative z-10 mb-2">
+              <i className={`${s.icon} text-gold text-3xl md:text-4xl`} />
               <Counter target={s.value} suffix={s.suffix} />
             </div>
-            <p className="font-body text-foreground/50 group-hover:text-foreground/80 mt-1 text-[10px] md:text-xs uppercase tracking-[0.2em] relative z-10 transition-colors whitespace-nowrap">
+            <p className="font-body text-foreground/50 group-hover:text-foreground/80 mt-1 text-xs md:text-sm uppercase tracking-[0.2em] relative z-10 transition-colors whitespace-nowrap">
               {s.label}
             </p>
           </div>
