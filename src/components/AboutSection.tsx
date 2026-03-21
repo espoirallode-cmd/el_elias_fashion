@@ -45,7 +45,7 @@ const AboutSection = () => {
             }`}
           >
             <div 
-              className="border-2 border-gold/40 rounded-lg overflow-hidden shadow-gold w-full lg:w-[500px] xl:w-[550px]"
+              className="border-2 border-gold/40 rounded-lg overflow-hidden shadow-gold w-full lg:w-[500px] xl:w-[550px] lg:min-h-[650px]"
               style={{ height: textHeight && window.innerWidth >= 1024 ? `${textHeight}px` : "auto" }}
             >
               <img src={aboutImage} alt="El_Elias Fashion" className="w-full h-full object-cover object-top" />
@@ -59,13 +59,13 @@ const AboutSection = () => {
               visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
             }`}
           >
-            <h2 className="font-display text-gold text-5xl md:text-6xl mb-6 text-center lg:text-left">Notre Histoire</h2>
-            <p className="font-body text-foreground/80 leading-relaxed mb-4">
+            <h2 className="font-display text-gold text-5xl md:text-6xl mb-10 text-center lg:text-left">Notre Histoire</h2>
+            <p className="font-body text-foreground/80 leading-relaxed mb-8 md:text-lg">
               Depuis plus de 10 ans, <strong className="text-gold">Boutique la Qualité — El_Elias Fashion</strong> habille
               les hommes et femmes de Cotonou avec élégance et raffinement. Notre passion pour la mode haut de gamme nous
               pousse à sélectionner les meilleurs tissus et les coupes les plus soignées.
             </p>
-            <p className="font-body text-foreground/60 leading-relaxed mb-8">
+            <p className="font-body text-foreground/60 leading-relaxed mb-12 md:text-lg">
               Chaque pièce de notre collection est choisie with soin pour garantir qualité, style et durabilité. Nous
               croyons que l'élégance est un art de vivre, et nous sommes là pour vous accompagner dans cette démarche.
             </p>
