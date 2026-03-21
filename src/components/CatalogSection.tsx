@@ -121,9 +121,11 @@ const CatalogSection = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   loading="lazy"
                 />
-                <div className="absolute top-3 right-3 bg-background/80 rounded-full w-10 h-10 flex items-center justify-center">
-                  <i className={`${p.icon} text-gold text-sm`} />
-                </div>
+                {active === "Tous" && (
+                  <div className="absolute top-3 right-3 bg-background/80 rounded-full w-10 h-10 flex items-center justify-center">
+                    <i className={`${p.icon} text-gold text-sm`} />
+                  </div>
+                )}
                 <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <i className="fa-solid fa-expand text-white text-2xl" />
                 </div>
