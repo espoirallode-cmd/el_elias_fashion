@@ -48,7 +48,7 @@ const StatsSection = () => (
         {stats.map((s) => (
           <div
             key={s.label}
-            className="relative overflow-hidden bg-white/5 backdrop-blur-xl border border-gold/20 rounded-2xl p-6 text-center hover:bg-gold/10 hover:border-gold/40 transition-all duration-500 shadow-2xl group w-[280px] shrink-0"
+            className="relative overflow-hidden bg-white/5 backdrop-blur-xl border border-gold/20 rounded-2xl p-6 text-center hover:bg-gold/10 hover:border-gold/40 transition-all duration-500 shadow-2xl group w-[320px] shrink-0"
           >
             {/* Subtle light reflection for glacial effect */}
             <div className="absolute -top-24 -left-24 w-48 h-48 bg-gold/10 rounded-full blur-3xl group-hover:bg-gold/20 transition-all" />
