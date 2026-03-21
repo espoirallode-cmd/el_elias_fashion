@@ -116,15 +116,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Down indicator */}
-      <a
-        href="#stats"
-        className={`absolute bottom-6 left-1/2 -translate-x-1/2 text-gold/50 text-xl transition-all duration-1000 delay-700 ${
-          visible ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <div className="w-px h-12 bg-gradient-to-b from-gold to-transparent mx-auto" />
-      </a>
+
     </section>
   );
 };
