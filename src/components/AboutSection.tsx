@@ -35,7 +35,11 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section id="about" ref={ref} className="pt-10 pb-24 bg-background">
+    <section 
+      id="about" 
+      ref={ref} 
+      className="bg-background pt-10 pb-24 lg:pt-0 lg:pb-0 lg:min-h-[580px] lg:flex lg:items-center lg:justify-center"
+    >
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row lg:items-start justify-center gap-6 lg:gap-12 max-w-5xl mx-auto">
           {/* Image */}
