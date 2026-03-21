@@ -57,6 +57,7 @@ const categories = ["Tous", "Costumes", "Chemises", "Lacostes", "Pantalons", "Ch
 const CatalogSection = () => {
   const [active, setActive] = useState("Tous");
   const [visible, setVisible] = useState(false);
+  const [selectedImg, setSelectedImg] = useState<string | null>(null);
   const ref = useRef<HTMLElement>(null);
 
   useEffect(() => {
@@ -106,7 +107,10 @@ const CatalogSection = () => {
               className="bg-dark-card rounded-lg overflow-hidden border border-transparent hover:border-gold/50 hover:shadow-gold hover:-translate-y-1 transition-all duration-300 group w-full max-w-sm"
               style={{ animationDelay: `${i * 0.1}s` }}
             >
-              <div className="relative overflow-hidden aspect-square">
+              <div 
+                className="relative overflow-hidden aspect-square cursor-zoom-in"
+                onClick={() => setSelectedImg(p.img)}
+              >
                 <img
                   src={p.img}
                   alt={p.name}
@@ -116,11 +120,14 @@ const CatalogSection = () => {
                 <div className="absolute top-3 right-3 bg-background/80 rounded-full w-10 h-10 flex items-center justify-center">
                   <i className={`${p.icon} text-gold text-sm`} />
                 </div>
+                <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <i className="fa-solid fa-expand text-white text-2xl" />
+                </div>
               </div>
-              {active === "Tous" && (
-                <div className="p-5 md:p-6">
-                  <h3 className="font-body font-semibold text-foreground text-sm md:text-base mb-1 truncate">{p.name}</h3>
-                  <p className="text-gold font-body font-bold text-xs md:text-sm mb-4">{p.price}</p>
+              <div className="p-5 md:p-6">
+                <h3 className="font-body font-semibold text-foreground text-sm md:text-base mb-1 truncate">{p.name}</h3>
+                <p className="text-gold font-body font-bold text-xs md:text-sm mb-4">{p.price}</p>
+                {active === "Tous" && (
                   <button 
                     onClick={() => {
                       setActive(p.cat);
@@ -130,12 +137,34 @@ const CatalogSection = () => {
                   >
                     Voir plus
                   </button>
-                </div>
-              )}
+                )}
+              </div>
             </div>
           ))}
         </div>
       </div>
+
+      {/* Lightbox Modal */}
+      {selectedImg && (
+        <div 
+          className="fixed inset-0 z-[100] bg-black/95 backdrop-blur-sm flex items-center justify-center p-4 md:p-10 transition-all duration-500 animate-in fade-in"
+          onClick={() => setSelectedImg(null)}
+        >
+          <button 
+            className="absolute top-6 right-6 text-white text-4xl hover:text-gold transition-colors p-2"
+            onClick={() => setSelectedImg(null)}
+          >
+            <i className="fa-solid fa-xmark" />
+          </button>
+          
+          <img 
+            src={selectedImg} 
+            alt="Product Preview" 
+            className="max-w-full max-h-full object-contain rounded-lg shadow-2xl animate-in zoom-in duration-300"
+            onClick={(e) => e.stopPropagation()}
+          />
+        </div>
+      )}
     </section>
   );
 };
