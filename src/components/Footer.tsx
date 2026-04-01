@@ -30,7 +30,7 @@ const Footer = () => (
       </div>
       <div className="text-center mt-8 pt-6 border-t border-gold/10">
         <p className="font-body text-foreground/40 text-xs">
-          © 2025 El_Elias Fashion — Cotonou, Bénin. Tous droits réservés.
+          © 2026 El_Elias Fashion — Cotonou, Bénin. Tous droits réservés.
         </p>
       </div>
     </div>
